@@ -1,0 +1,89 @@
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    } 
+body {
+    top: 0px !important; 
+    }
+.myheader
+{margin-top: 0;width: 100%;left: 0;right: 0;
+        z-index:1000;
+
+        color: white;
+        background-color: black;
+        text-align :center;
+        
+}
+
+#cart {
+																padding: 10px 0; text-align: center;
+                                                                      height: 41px;
+                                                                      margin-top:18px;
+                                                                      font-weight: 500;
+                                                                      
+                                                                      width: 85px;
+                                                                      display: inline-block
+}
+
+.addtocart {
+																padding: 10px 0; text-align: center;
+                                                                      height: 41px;
+                                                                      margin-top:18px;
+                                                                      font-weight: 500;
+                                                                      width:100px;
+                                                                      display: inline-block
+}
+
+.menubar
+{background-color: orangered;
+ margin-top: 60px;
+ margin-left: 5px;
+ 
+ border-radius: 10px;
+ border-color: black;
+ border-style: groove;}
+
+#saaridikkat
+{padding-top: 20px;}
+
+strong {color:black;}
+
+a{color: white;}
+
+.logo{
+  float:left; width: 100%;
+}
+
+.container {width: 100%}
+
+#show{height: 500px;}
+
+
+
+/* queries ro make header responsive */
+
+@media (max-width: 880px) {
+
+	
+								.myheader{
+												width: 100%;
+												height: 348px
+										 }
+
+                .menubar
+                        {height:auto; margin-top:5px;margin-left: 5px;
+                        }
+							}
+
+
+@media (min-width:992px) {
+					.myheader{
+									    width: 100%;
+							    height:164px;
+							 }
+						 }
+
+
+
+
+
