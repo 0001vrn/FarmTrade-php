@@ -70,7 +70,7 @@ function googleTranslateElementInit() {
           <li>
           <?php
             if(isset($_SESSION['id']))
-                echo $_SESSION['uname']."<a href='logout.php'>logout</a>";  
+                echo "Hi, ".$_SESSION['uname']."<a href='logout.php'>logout</a>";  
           ?>
 
           </li> 
@@ -275,13 +275,14 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
           <h4 class="modal-title">Sign In form</h4>
         </div>
         <div class="modal-body">
+          <span class="errorLogin" style="color:red;"><?php echo $_SESSION['err'] ?> </span>
          <form action="signin.php" method="post">
     <div class="form-group">
       <label for="Name">Aadhar:</label>
       <input name="aadhar" class="form-control" id="name" placeholder="Enter Aadhar number">
     </div>
     <div class="form-group">
-      <label for="aadhar">Password:</label>
+      <label for="aadhar">Password:<span class="errorLogin"> </span></label>
       <input name="pass" class="form-control" id="aadhar" placeholder="Enter password number">
     </div>
         <button type="submit" class="btn btn-default">Submit</button>

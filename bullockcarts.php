@@ -111,7 +111,7 @@ function googleTranslateElementInit() {
 </div> <!--header over-->
 
 
- <div class="row" style="padding-top: 30px;">
+ <div class="row" style="padding-top: 50px;">
  <div class="container-fluid" style="padding: 0">
    <div class="col-md-12" style="padding: 0">  
    
