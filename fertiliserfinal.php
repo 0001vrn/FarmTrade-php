@@ -49,7 +49,7 @@ function googleTranslateElementInit() {
               <li>
           <?php
             if(isset($_SESSION['id']))
-                echo $_SESSION['uname']."<a href='logout.php'>logout</a>";  
+                echo "Hi, ".$_SESSION['uname']."<a href='logout.php'>Logout</a>";  
           ?>
 
           </li> 
@@ -120,7 +120,7 @@ function googleTranslateElementInit() {
 </div> <!--header over-->
 
 
- <div class="row" style="padding-top: 30px;">
+ <div class="row" style="padding-top: 70px;">
  <div class="container-fluid" style="padding: 0">
    <div class="col-md-12" style="padding: 0">  
    
