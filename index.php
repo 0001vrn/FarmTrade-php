@@ -70,7 +70,7 @@ function googleTranslateElementInit() {
           <li>
           <?php
             if(isset($_SESSION['id']))
-                echo "Hi, ".$_SESSION['uname']."<a href='logout.php'>logout</a>";  
+                echo "Hi, ".$_SESSION['uname']."<a href='logout.php'>Logout</a>";  
           ?>
 
           </li> 

@@ -37,8 +37,26 @@ function googleTranslateElementInit() {
           
           <ul class="nav navbar-nav navbar-right" >
 
-              <li ><a  data-toggle="modal" data-target="#signUpModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a  data-toggle="modal" data-target="#signInModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li>
+          <?php
+            if(isset($_SESSION['id']))
+                echo "Hi, ".$_SESSION['uname']."<a href='logout.php'>Logout</a>";
+          ?>
+
+          </li> 
+              <li >
+              <?php
+                if(!isset($_SESSION['id']))
+                  echo "<a data-toggle='modal' data-target='#signUpModal'><span class='glyphicon glyphicon-user'></span> Sign Up</a>";
+              ?>
+                
+              </li>
+              <li>
+              <?php
+              if(!isset($_SESSION['id']))
+                echo "<a data-toggle='modal' data-target='#signInModal'><span class='glyphicon glyphicon-log-in'></span> Login</a>";
+              ?>
+            </li>
           </ul>
         
         </div>
@@ -93,7 +111,7 @@ function googleTranslateElementInit() {
 </div> <!--header over-->
 
 
- <div class="row" style="padding-top: 30px;">
+ <div class="row" style="padding-top: 50px;">
  <div class="container-fluid" style="padding: 0">
    <div class="col-md-12" style="padding: 0">  
    
