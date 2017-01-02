@@ -2,6 +2,8 @@
 session_start();
 include 'dbh.php';
 
+$_SESSION['err']="";
+
 $aadhar=$_POST['aadhar'];
 $pass=$_POST['pass'];
 
