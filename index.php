@@ -226,7 +226,8 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
 
       </div>
 
-    </footer><!-- Modal SIGN UP-->
+    </footer>
+    <!-- Modal SIGN UP-->
   <div class="modal fade" id="signUpModal" role="dialog">
     <div class="modal-dialog">
     
@@ -237,7 +238,7 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
           <h4 class="modal-title">Sign Up form</h4>
         </div>
         <div class="modal-body">
-         <form action="signup.php" method="post">
+         <form action="signup.php" method="post" onsubmit="return signupformValidate()">
     <div class="form-group">
       <label for="Name">Name:</label>
       <input name="name" class="form-control" id="name" placeholder="Enter name">
@@ -248,11 +249,11 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
     </div>
     <div class="form-group">
       <label for="aadhar">Password:</label>
-      <input name="pass" class="form-control" id="aadhar" placeholder="Enter aadhar card number">
+      <input name="pass" class="form-control" id="pwd" placeholder="Enter aadhar card number">
     </div>
     <div class="form-group">
       <label for="aadhar">Confirm password:</label>
-      <input name="cpass" class="form-control" id="aadhar" placeholder="Enter aadhar card number">
+      <input name="cpass" class="form-control" id="pwd2" placeholder="Enter aadhar card number">
     </div>
     
     
@@ -275,14 +276,19 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
           <h4 class="modal-title">Sign In form</h4>
         </div>
         <div class="modal-body">
-          <span class="errorLogin" style="color:red;"><?php echo $_SESSION['err'] ?> </span>
+          <span class="errorLogin" style="color:red;">
+          <?php
+          if(isset($_SESSION['err']))
+            echo $_SESSION['err']; 
+          ?> 
+          </span>
          <form action="signin.php" method="post">
     <div class="form-group">
       <label for="Name">Aadhar:</label>
       <input name="aadhar" class="form-control" id="name" placeholder="Enter Aadhar number">
     </div>
     <div class="form-group">
-      <label for="aadhar">Password:<span class="errorLogin"> </span></label>
+      <label for="aadhar">Password:</label>
       <input name="pass" class="form-control" id="aadhar" placeholder="Enter password number">
     </div>
         <button type="submit" class="btn btn-default">Submit</button>
