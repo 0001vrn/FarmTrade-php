@@ -276,12 +276,16 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
           <h4 class="modal-title">Sign In form</h4>
         </div>
         <div class="modal-body">
+<<<<<<< HEAD
           <span class="errorLogin" style="color:red;">
           <?php
           if(isset($_SESSION['err']))
             echo $_SESSION['err']; 
           ?> 
           </span>
+=======
+         <span class="errorLogin" style="color:red;"><?php echo $_SESSION['err'] ?> </span>
+>>>>>>> 9a9940f8a5e6536204665fc5952d03c0a4f0cd1c
          <form action="signin.php" method="post">
     <div class="form-group">
       <label for="Name">Aadhar:</label>
