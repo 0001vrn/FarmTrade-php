@@ -322,7 +322,8 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
 
       </div>
 
-    </footer><!-- Modal SIGN UP-->
+    </footer>
+    <!-- Modal SIGN UP-->
   <div class="modal fade" id="signUpModal" role="dialog">
     <div class="modal-dialog">
     
@@ -333,22 +334,22 @@ At FarmTrade, our vision is to be India's most customer centric company ,to buil
           <h4 class="modal-title">Sign Up form</h4>
         </div>
         <div class="modal-body">
-         <form >
+         <form action="signup.php" method="post" onsubmit="return signupformValidate()">
     <div class="form-group">
       <label for="Name">Name:</label>
-      <input type="name" class="form-control" id="name" placeholder="Enter name">
+      <input name="name" class="form-control" id="name" placeholder="Enter name">
     </div>
     <div class="form-group">
       <label for="aadhar">Aadhar card number:</label>
-      <input type="aadhar" class="form-control" id="aadhar" placeholder="Enter aadhar card number">
+      <input name="aadhar" class="form-control" id="aadhar" placeholder="Enter aadhar card number">
     </div>
     <div class="form-group">
       <label for="aadhar">Password:</label>
-      <input type="aadhar" class="form-control" id="aadhar" placeholder="Enter aadhar card number">
+      <input name="pass" class="form-control" id="pwd" placeholder="Enter aadhar card number">
     </div>
     <div class="form-group">
       <label for="aadhar">Confirm password:</label>
-      <input type="aadhar" class="form-control" id="aadhar" placeholder="Enter aadhar card number">
+      <input name="cpass" class="form-control" id="pwd2" placeholder="Enter aadhar card number">
     </div>
     
     
